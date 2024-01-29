@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -46,9 +47,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,10 +62,41 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  padding: 150px;
+
+
+  .grid {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .card {
+      width: 100%;
+      height: 300px;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      border: 2px solid rgb(205, 151, 255);
+      box-shadow: 5px 5px 20px blueviolet,
+                  -5px -5px 20px blueviolet,
+                  inset 5px 5px 20px blueviolet,
+                  inset -5px -5px 20px blueviolet;
+      text-align: center;
+      padding: 50px 0;
+    }         
   }
 }
