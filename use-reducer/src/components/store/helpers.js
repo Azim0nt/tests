@@ -6,10 +6,14 @@ function globalReducer(state, payload){
             return{...state, imgSrc:payload.imgSrc}
         case 'rangeChange':
             return{...state, borderLight:payload.borderLight}
-        // case 'incr':
-        //     return{...state, borderLight:state.borderLight + 1}
-        // case 'decr':
-        //     return{...state, borderLight:state.borderLight - 1}
+        case 'changeColor':
+            return{...state, borderColor:payload.borderColor}
+        case 'incr':
+            return{...state, borderSize:state.borderSize + 1}
+        case 'decr':
+            return{...state, borderSize:state.borderSize - 1}
+        case 'modalChange':
+            return{...state, modal:payload.modal}
         default:
             return state
     }

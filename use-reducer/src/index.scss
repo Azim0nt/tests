@@ -76,7 +76,7 @@ button:focus-visible {
   width: 100%;
   height: 100vh;
   padding: 150px;
-
+  position: relative;
 
   .grid {
     width: 1200px;
@@ -90,13 +90,43 @@ button:focus-visible {
       height: 300px;
       background-color: #1e1e1e;
       border-radius: 15px;
-      border: 2px solid rgb(205, 151, 255);
+      border: 2px solid rgb(255, 255, 255);
       box-shadow: 5px 5px 20px blueviolet,
-                  -5px -5px 20px blueviolet,
-                  inset 5px 5px 20px blueviolet,
-                  inset -5px -5px 20px blueviolet;
+        -5px -5px 20px blueviolet,
+        inset 5px 5px 20px blueviolet,
+        inset -5px -5px 20px blueviolet;
       text-align: center;
       padding: 50px 0;
-    }         
+    }
+  }
+
+  .modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+      width: 50%;
+      height: 300px;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      border: 2px solid rgb(255, 255, 255);
+      box-shadow: 5px 5px 20px blueviolet,
+        -5px -5px 20px blueviolet,
+        inset 5px 5px 20px blueviolet,
+        inset -5px -5px 20px blueviolet;
+      text-align: center;
+      padding: 10px 10px;
+      button{
+        background-color: #ff0000;
+        font-size: 20px;
+        display: block;
+      }
+    }
   }
 }
